@@ -144,6 +144,7 @@ foreach ($sob as $s) {
 
 }
 
+
 echo '</div>';
 
 echo "<a href='?edit_sob=1'>Изменить события</a>";

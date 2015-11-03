@@ -109,7 +109,7 @@ if (isset($_GET['edit_sob'])) {
         ';
 
     die;
-}
+}  //end if (isset($_GET['edit_sob']))
 
 /*
 
@@ -149,24 +149,6 @@ echo '</div>';
 
 echo "<a href='?edit_sob=1'>Изменить события</a>";
 
-/*
-echo '
-<form method="post" action="stav.php"> 
-    <div id="sortable">
-	<div id="sort_1">A: <input type="text" name="A" size="10" maxlength="10" value="'.$_POST["A"].'"></div> <br />
-	<div id="sort_2">B: <input type="text" name="B" size="10" maxlength="10" value="'.$_POST["B"].'"></div> <br />
-	<div id="sort_3">C: <input type="text" name="C" size="10" maxlength="10" value="'.$_POST["C"].'"></div> <br />
-	<div id="sort_4">D: <input type="text" name="D" size="10" maxlength="10" value="'.$_POST["D"].'"></div> <br />
-    </div>
-	<input type="submit" value="Показать варинаты">
-</form>
-    <div id="info" class="ui-widget">
-        <div>ID элемента: <span id="itemId">не определено</span></div>
-        <div>Позиция: <span id="pos">не определено</span></div>
-    </div>
-
-';
-*/
 
 echo "
   <script>
@@ -238,5 +220,6 @@ echo '2-3 :' . round($m['1']*$m['2'],2) .'<br />';
 
 echo '</div>';
 
+echo "<a href='ins_stav.php'>Поставить</a> <br />"; 
 
  ?>

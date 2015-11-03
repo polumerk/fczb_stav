@@ -1,0 +1,1 @@
+fczb_stav
